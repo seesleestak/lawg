@@ -1,6 +1,6 @@
 # lawg
 
-A bash script that saves timestamped console output.
+A bash script that saves timestamped console output to a namespaced directory.
 
 ## Installation
 
