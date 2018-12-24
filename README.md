@@ -1,6 +1,6 @@
 # lawg
 
-A bash script that saves timestamped console output to a namespaced directory.
+A bash script that saves timestamped console output to a namespaced directory. It uses `tee` to read from stdin and write to the file.
 
 ## Installation
 
