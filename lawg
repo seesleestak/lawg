@@ -1,4 +1,6 @@
 # !/bin/sh
+TIMESTAMP=$(date -Iseconds)
+
 if [ -z $1 ]; then
   echo "Must include a directory name"
   exit
@@ -21,6 +23,6 @@ TARGET_PATH="$TARGET_DIR/$LOG_NAME"
 mkdir -p $TARGET_PATH
 
 # tee input into timestamped file
-cat | tee $TARGET_PATH/$(date -Iseconds)
+cat | tee $TARGET_PATH/$TIMESTAMP -i
 
 # vim:syntax=sh
